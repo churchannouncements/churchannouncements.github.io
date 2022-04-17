@@ -108,6 +108,13 @@ button:hover {
     }
 }
 
+@media (min-width: 405px) {
+    #logo {
+        cursor: pointer;
+        pointer-events: none;
+    }
+}
+
 body::-webkit-scrollbar {
     width: 11px;               /* width of the entire scrollbar */
 }
