@@ -1,0 +1,123 @@
+@import url('http://fonts.cdnfonts.com/css/circular-std-book');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+li, a, button {
+    font-family: 'Circular Std Medium', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10%;
+}
+
+#nav__links {
+    list-style: none;
+}
+
+#nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+#nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+#nav__links li a:hover {
+    color: #febf94;
+}
+
+button {
+    padding: 9px 15px;
+    background-color: #febf94;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: #ffa970;
+}
+
+#logo {
+    font-family: 'Circular Std Medium', sans-serif;
+    color: #000;
+    cursor: pointer;
+    font-size: 28px;
+}
+
+
+.active {
+    border-bottom: 2px solid #febf94;
+}
+#mainContent {
+    width: 94%;
+    margin-top: 4%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    align-self: center;
+    overflow: hidden;
+    outline: none;
+}
+
+@media (max-width: 405px) {
+    #nav__links {
+        display: none;
+        position: absolute;
+        width: 200px;
+        height: 268px;
+        z-index: 2003;
+        float: left;
+        top: 60px;
+        left: 40px;
+        text-align: center;
+        background-color: #fff;
+        border: 1px solid #000;
+        border-radius: 8px;
+    }
+    
+    #nav__links li {
+        background-color: #fff;
+        display: inline-block;
+        margin-top: 30px;
+        padding: 0px 20px;
+    }
+    
+    #nav__links li a {
+        background-color: #fff;
+        transition: all 0.3s ease 0s;
+    }
+    
+    #nav__links li a:hover {
+        color: #febf94;
+    }
+}
+
+body::-webkit-scrollbar {
+    width: 11px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #fff;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #CFD8DC;    /* color of the scroll thumb */
+  border-radius: 22px;       /* roundness of the scroll thumb */
+  border: 3px solid #fff;  /* creates padding around scroll thumb */
+}

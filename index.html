@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Announcements</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="changeTheseObjects.js" defer></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+        <link rel="stylesheet" href="homeStyles.css">
+        <link rel="icon" href="https://emojipedia-us.s3.amazonaws.com/source/skype/289/loudspeaker_1f4e2.png">
+    </head>
+    <body>
+       <header>
+        <div id="logo" onclick="changeThisObject('nav__links')">CE</div>
+           <nav>
+               <ul id="nav__links">
+                   <li><a href="index.html" class="active"  onclick="closeThisObject('nav__links')">Announcements</a></li>
+                   <!--<li><a href="https://tockify.com/tkf2/submitEvent/8b625bb56e4741c09e4f0a8d004fbd71" target="_blank"  onclick="closeThisObject('nav__links')">Birthdays</a></li>-->
+               </ul>
+           </nav>
+           <a class="cta" href="https://tockify.com/e/adrian.tobi/agenda" target="_blank"><button>Admin</button></a>
+       </header>
+
+       <div id="mainContent">
+               <div data-tockify-component="calendar" data-tockify-calendar="adrian.tobi"></div>
+               <script data-cfasync="false" data-tockify-script="embed" src="https://public.tockify.com/browser/embed.js"></script>
+       </div>
+    </body>
+</html>
